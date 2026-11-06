@@ -61,6 +61,7 @@ lowtube/
 ├── content.js        # Video filtering logic
 ├── background.js     # Extension initialization
 ├── web-ext-config.mjs # web-ext lint/build options
+├── CHANGELOG.md      # Release notes, newest version first
 ├── icons/           # Extension icons
 │   ├── 16.png
 │   ├── 48.png
@@ -96,7 +97,7 @@ python3 -m venv .venv
 
 Requires Firefox (on macOS it is started with `open -a Firefox`; elsewhere set `FIREFOX_BIN` if `firefox` is not on your PATH). Selenium downloads geckodriver automatically. The exit code is non-zero if any check fails, and screenshots are saved to `tests/output/`. The test declines YouTube's cookie prompt and uses English UI.
 
-Before publishing, also check by hand while signed in to YouTube (the test runs logged out, where the home feed is empty): load the package via `about:debugging` → This Firefox → Load Temporary Add-on, and confirm the home feed hides low-view videos and Shorts without leaving gaps. With "Always show channels I'm subscribed to" ticked, confirm your subscriptions feed shows its low-view videos again. Then upload the zip to [addons.mozilla.org](https://addons.mozilla.org/developers/) for signing.
+Before publishing, also check by hand while signed in to YouTube (the test runs logged out, where the home feed is empty): load the package via `about:debugging` → This Firefox → Load Temporary Add-on, and confirm the home feed hides low-view videos and Shorts without leaving gaps. With "Always show channels I'm subscribed to" ticked, confirm your subscriptions feed shows its low-view videos again. Then upload the zip to [addons.mozilla.org](https://addons.mozilla.org/developers/) for signing, and paste the new version's list from [CHANGELOG.md](CHANGELOG.md) into the "Release notes" field.
 
 ## License
 
