@@ -1,0 +1,5 @@
+.DS_Store
+web-ext-artifacts/
+tests/output/
+__pycache__/
+.venv/
